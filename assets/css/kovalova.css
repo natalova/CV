@@ -100,7 +100,7 @@ body {
 
 .name {
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-family: Bitter, serif;
   font-size: 54px;
   font-weight: 700;
@@ -197,46 +197,38 @@ body {
   background-repeat: no-repeat;
   padding-left: 32px;
   margin-bottom: 16px;
+  color: #333;
 }
 
 .link.linkedin {
   background-image: url("../images/in.svg");
-  color: #333;
+  
 }
 
-.link.linkedin:hover {
-  color: #0566ff;
+.link:hover {
   text-decoration: underline;
 }
 
 .link.facebook {
   background-image: url("../images/f.svg");
-  color: #333;
-}
-
-.link.facebook:hover {
-  color: #dd3e7b;
-  text-decoration: underline;
-}
-
-.my-site-link {
-  color: #333;
-  text-decoration: none;
-}
-
-.my-site-link:hover {
-  text-decoration: underline;
 }
 
 .print-link {
-  display: none;
-  max-width: 300px;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
-  color: #333;
-  text-align: center;
-  text-decoration: none;
+  display: block;
+    max-width: 116px;
+    height: 32px;
+    padding-top: 8px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    background-size: 30px 30px;
+    background-position: 0px 50%;
+    background-repeat: no-repeat;
+    padding-left: 32px;
+    background-image: url(../images/pdf.svg);
 }
 
 .print-link:hover {
@@ -264,7 +256,6 @@ body {
     flex-basis: 50%;
   }
   .print-link {
-    display: none;
     margin-bottom: 30px;
   }
 }
@@ -335,3 +326,12 @@ body {
     margin-bottom: 20px;
   }
 }
+
+@media print { 
+  .print-link {
+    display: none;
+  }
+  .photo {
+    display: none;
+  }
+ }
